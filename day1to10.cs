@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using System;
 
-public class AcronymBuilder
+public class Non_static
 {
     public string[] avoid_words = {"and", "for", "an", "and", "by", "of"};
 
-    public string build_acronym(string input)
+    public string Build_acronym(string input)
     {
         string[] split_input = input.Split(' ');
         string acro = "";
@@ -61,19 +61,29 @@ public class Main_loop
         return output_price;
     }
 
+    void DvsL(string input)
+    {
+        int letters = input.Count(l => char.IsLetter(l));
+        int digits = input.Count(d => char.IsDigit(d));
+        if (letters > digits) Console.WriteLine("There are more letters.");
+        else if (letters < digits) Console.WriteLine("There are more digits.");
+        else Console.WriteLine("Both are equal.");
+    }
+
     static void Main(string[] args)
     {   
         Main_loop static_functions = new Main_loop();
+        Non_static not_static = new Non_static();
         /*
-        AcronymBuilder acro_builder = new AcronymBuilder();
-        string test1 = acro_builder.build_acronym("National Aeronautics and Space Administration");
+        string test1 = not_static.build_acronym("National Aeronautics and Space Administration");
         Console.WriteLine(test1);
         bool test2 = static_functions.All_unique("!@#*$%^&*()aA");
         Console.WriteLine(test2);
         string test3 = static_functions.Build_slug("  ?H^3-1*1]0! W[0%R#1]D  ");
         Console.WriteLine(test3);
-        */
         string test4 = static_functions.Fill_gallon_price(15M, 9.5M, 3.98M);
         Console.WriteLine(test4);
+        static_functions.DvsL("abc123!@#DEF");   test5
+        */
     }
 }
