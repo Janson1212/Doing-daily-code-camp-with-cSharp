@@ -70,6 +70,32 @@ public class Main_loop
         else Console.WriteLine("Both are equal.");
     }
 
+    static bool ismirror(string input1, string input2)
+    {   
+        string reverted = "";
+        for (int l = 0; l < input2.Length; l++)
+        {
+            reverted += input2[input2.Length - 1 -l];
+        }
+        if (input1 == reverted) return true;
+        else return false;
+    }
+    static bool isprefectsquare(float area)
+    {
+        if (area < 0) return false;
+        double root_num = Math.Sqrt(area);
+        double Iroot_num = (int)root_num;
+        if (Iroot_num == root_num) return true;
+        else return false;
+    }
+    static float second_largest(List<float> arrary)
+    {
+        float current_largest = arrary.Max();
+        arrary.RemoveAll(n => n == current_largest);
+        float current_2ndlargest = arrary.Max();
+        return current_2ndlargest;
+    }
+
     static void Main(string[] args)
     {   
         Main_loop static_functions = new Main_loop();
@@ -83,7 +109,10 @@ public class Main_loop
         Console.WriteLine(test3);
         string test4 = static_functions.Fill_gallon_price(15M, 9.5M, 3.98M);
         Console.WriteLine(test4);
-        static_functions.DvsL("abc123!@#DEF");   test5
+        static_functions.DvsL("abc123!@#DEF");   test7
+        Console.WriteLine(ismirror("RaceCar", "raCecaR")); test 8
+        Console.WriteLine(isprefectsquare(25281)); test 9
+        Console.WriteLine(second_largest( new List<float>{10, -17, 55.5f, 44, 91, 0})); test 10
         */
-    }
+    }   
 }
