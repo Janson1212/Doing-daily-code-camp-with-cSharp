@@ -8,7 +8,7 @@ public class Non_static_functions
     public string[] avoid_words = {"and", "for", "an", "and", "by", "of"};
     public string[] file_size_unit = {"B", "KB", "MB", "GB","TB"};
 
-    public string build_acronym(string input)
+    public string Build_acronym(string input)
     {
         string[] split_input = input.Split(' ');
         string acro = "";
