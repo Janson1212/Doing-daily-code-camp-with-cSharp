@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/workspaces/Doing-daily-code-camp-with-c-/Doing-daily-code-camp-with-c-.csproj": {}
+    "/workspaces/Doing-daily-code-camp-with-cSharp/Doing-daily-code-camp-with-c-.csproj": {}
   },
   "projects": {
-    "/workspaces/Doing-daily-code-camp-with-c-/Doing-daily-code-camp-with-c-.csproj": {
+    "/workspaces/Doing-daily-code-camp-with-cSharp/Doing-daily-code-camp-with-c-.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/Doing-daily-code-camp-with-c-/Doing-daily-code-camp-with-c-.csproj",
+        "projectUniqueName": "/workspaces/Doing-daily-code-camp-with-cSharp/Doing-daily-code-camp-with-c-.csproj",
         "projectName": "Doing-daily-code-camp-with-c-",
-        "projectPath": "/workspaces/Doing-daily-code-camp-with-c-/Doing-daily-code-camp-with-c-.csproj",
+        "projectPath": "/workspaces/Doing-daily-code-camp-with-cSharp/Doing-daily-code-camp-with-c-.csproj",
         "packagesPath": "/home/codespace/.nuget/packages/",
-        "outputPath": "/workspaces/Doing-daily-code-camp-with-c-/obj/",
+        "outputPath": "/workspaces/Doing-daily-code-camp-with-cSharp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/codespace/.nuget/NuGet/NuGet.Config"
@@ -61,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.400/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/10.0.401/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

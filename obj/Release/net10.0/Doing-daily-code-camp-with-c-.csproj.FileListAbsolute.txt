@@ -1,0 +1,15 @@
+/workspaces/Doing-daily-code-camp-with-cSharp/bin/Release/net10.0/Doing-daily-code-camp-with-c-
+/workspaces/Doing-daily-code-camp-with-cSharp/bin/Release/net10.0/Doing-daily-code-camp-with-c-.deps.json
+/workspaces/Doing-daily-code-camp-with-cSharp/bin/Release/net10.0/Doing-daily-code-camp-with-c-.runtimeconfig.json
+/workspaces/Doing-daily-code-camp-with-cSharp/bin/Release/net10.0/Doing-daily-code-camp-with-c-.dll
+/workspaces/Doing-daily-code-camp-with-cSharp/bin/Release/net10.0/Doing-daily-code-camp-with-c-.pdb
+/workspaces/Doing-daily-code-camp-with-cSharp/obj/Release/net10.0/Doing-daily-code-camp-with-c-.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/Doing-daily-code-camp-with-cSharp/obj/Release/net10.0/Doing-daily-code-camp-with-c-.AssemblyInfoInputs.cache
+/workspaces/Doing-daily-code-camp-with-cSharp/obj/Release/net10.0/Doing-daily-code-camp-with-c-.AssemblyInfo.cs
+/workspaces/Doing-daily-code-camp-with-cSharp/obj/Release/net10.0/Doing-daily-code-camp-with-c-.csproj.CoreCompileInputs.cache
+/workspaces/Doing-daily-code-camp-with-cSharp/obj/Release/net10.0/Doing-daily-code-camp-with-c-.sourcelink.json
+/workspaces/Doing-daily-code-camp-with-cSharp/obj/Release/net10.0/Doing-daily-code-camp-with-c-.dll
+/workspaces/Doing-daily-code-camp-with-cSharp/obj/Release/net10.0/refint/Doing-daily-code-camp-with-c-.dll
+/workspaces/Doing-daily-code-camp-with-cSharp/obj/Release/net10.0/Doing-daily-code-camp-with-c-.pdb
+/workspaces/Doing-daily-code-camp-with-cSharp/obj/Release/net10.0/Doing-daily-code-camp-with-c-.genruntimeconfig.cache
+/workspaces/Doing-daily-code-camp-with-cSharp/obj/Release/net10.0/ref/Doing-daily-code-camp-with-c-.dll

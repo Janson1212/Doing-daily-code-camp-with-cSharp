@@ -1,0 +1,5 @@
+/workspaces/Doing-daily-code-camp-with-cSharp/bin/Release/net10.0/publish/Doing-daily-code-camp-with-c-
+/workspaces/Doing-daily-code-camp-with-cSharp/bin/Release/net10.0/publish/Doing-daily-code-camp-with-c-.dll
+/workspaces/Doing-daily-code-camp-with-cSharp/bin/Release/net10.0/publish/Doing-daily-code-camp-with-c-.deps.json
+/workspaces/Doing-daily-code-camp-with-cSharp/bin/Release/net10.0/publish/Doing-daily-code-camp-with-c-.runtimeconfig.json
+/workspaces/Doing-daily-code-camp-with-cSharp/bin/Release/net10.0/publish/Doing-daily-code-camp-with-c-.pdb

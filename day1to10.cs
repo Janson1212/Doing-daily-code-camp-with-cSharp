@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using System;
 
-public class AcronymBuilder
+public class Non_static_functions
 {
     public string[] avoid_words = {"and", "for", "an", "and", "by", "of"};
+    public string[] file_size_unit = {"B", "KB", "MB", "GB","TB"};
 
     public string build_acronym(string input)
     {
@@ -21,13 +22,72 @@ public class AcronymBuilder
         }
         return acro;
     }
+
+    public int num_of_files_allow(float inp_file_size, string inp_file_size_unit, float GB_capcity)
+    {   
+        string unit = inp_file_size_unit.ToUpper();
+        if (!file_size_unit.Contains(unit)) 
+        {
+            Console.WriteLine(inp_file_size_unit + "is not a given file size unit");
+            return 0;
+        } 
+        else
+        {   
+            int index = System.Array.IndexOf(file_size_unit, inp_file_size_unit);
+            while (unit != "GB")
+            {   
+                inp_file_size /= 1000;
+                ++index;
+                unit = file_size_unit[index];
+            }
+            return (int)( GB_capcity / inp_file_size);
+        }
+    }
+    public int number_of_videos(float video_size,string video_unit,float drive_size,string drive_unit)
+    {
+        if (!file_size_unit.Contains(video_unit)) 
+        {
+            Console.WriteLine(video_unit + "is not a given file size unit");
+            return 0;
+        } 
+        else if (!file_size_unit.Contains(drive_unit)) 
+        {
+            Console.WriteLine(drive_unit + "is not a given file size unit");
+            return 0;
+        } 
+        else
+        {
+            int video_index = System.Array.IndexOf(file_size_unit, video_unit);
+            int drive_index = System.Array.IndexOf(file_size_unit, drive_unit);
+            if (video_index > drive_index)
+            {
+                Console.WriteLine("file is too large for the drive");
+                return 0;
+            }
+            else if (video_index == drive_index && video_size > drive_size)
+            {
+                Console.WriteLine("file is too large for the drive");
+                return 0;
+            }
+            else 
+            {
+                while (video_index != drive_index)
+                {
+                    --drive_index;
+                    drive_size *= 1000; 
+                }
+                return (int)(drive_size / video_size);
+            }
+            
+        }
+    }
 }
 
 
 
 public class Main_loop
 {
-    bool All_unique(string input)
+    public bool All_unique(string input)
     {   
         List<char> exist_chara = new List<char>();
         for (int i = 0; i < input.Length; i++)
@@ -38,7 +98,7 @@ public class Main_loop
         return true;
     }
 
-    string Build_slug(string input)
+    public string Build_slug(string input)
     {
         string clean_input = Regex.Replace(input.ToLower(), @"[^a-z0-9 ]", "");
         string[] split_input = clean_input.Split();
@@ -53,27 +113,11 @@ public class Main_loop
         return final_string;
     }   
 
-    string Fill_gallon_price(decimal max_size, decimal current_size, decimal price_per_unit)
+    public string Fill_gallon_price(decimal max_size, decimal current_size, decimal price_per_unit)
     {
         decimal missing_size = max_size - current_size;
         decimal final_price = Math.Round(missing_size * price_per_unit, 2);
         string output_price = "$" + final_price.ToString();
         return output_price;
-    }
-
-    static void Main(string[] args)
-    {   
-        Main_loop static_functions = new Main_loop();
-        /*
-        AcronymBuilder acro_builder = new AcronymBuilder();
-        string test1 = acro_builder.build_acronym("National Aeronautics and Space Administration");
-        Console.WriteLine(test1);
-        bool test2 = static_functions.All_unique("!@#*$%^&*()aA");
-        Console.WriteLine(test2);
-        string test3 = static_functions.Build_slug("  ?H^3-1*1]0! W[0%R#1]D  ");
-        Console.WriteLine(test3);
-        */
-        string test4 = static_functions.Fill_gallon_price(15M, 9.5M, 3.98M);
-        Console.WriteLine(test4);
     }
 }
